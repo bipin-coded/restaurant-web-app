@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodly - Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vender/bootstrap/css/bootstrap.min.css">
+
+    <!-- Styles CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive-style.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header align-items-center">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg sticky-top bg-white">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="https://foodlylandingpage-demo.netlify.app/assets/img/logo.svg" class="me-3" alt="brand"> -->
+                    Rio's<span class="text-dark">piri priri</span>
+                </a>
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#newslatter">Newslatter</a>
+                        </li>
+                    </ul>
+                    <a href="#contact-us" class="btn btn-primary shadow-none">Contact</a>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Carousel -->
+    <section id="hero" class="hero">
+        <div id="hero-carousel" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/sliders/01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/sliders/02.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/sliders/03.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- End of Carousel -->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const carousel = new bootstrap.Carousel('#hero-carousel')
+    </script>
+</body>
+
+</html>

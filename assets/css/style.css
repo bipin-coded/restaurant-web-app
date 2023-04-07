@@ -1,0 +1,169 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Variables CSS */
+:root {
+
+    /* Colors */
+    --primary-color      : #BA2530;
+    --primary-light-color: #FFD6D7;
+    --yellow-color       : #FEC65E;
+    --white-color        : #FFFFFF;
+    --black-color        : #7f7f90;
+
+    /* Font & Typography */
+    --body-font        : 'Poppins', sans-serif;
+    --biggest-font-size: 58px;
+    --h1-font-size     : 45px;
+    --normal-font-size : 18px;
+    --small-font-size  : 16px;
+    --smaller-font-size: 14px;
+
+    /* Font Weight */
+    --font-semibold: 600;
+    --font-medium  : 500;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light-color) !important;
+}
+
+/* custom Scrollbar */
+::-webkit-scrollbar {
+    width: 0.365rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background   : var(--primary-color);
+    /* border-radius: 0.5rem; */
+}
+
+/* Badge */
+.badge {
+    padding      : 0.7rem;
+    border-radius: 8px;
+}
+
+/* Navbar */
+.header {
+    border-bottom: 1px solid #e5e5e7;
+}
+
+.navbar {
+    padding   : 12px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar-brand {
+    font-size  : 32px;
+    font-weight: 700;
+    color      : var(--primary-color);
+    margin     : 0;
+    font-family: var(--font-secondary);
+}
+
+.navbar-brand span {
+    font-size  : var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--black-color) !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    position    : relative;
+    margin-right: 39px;
+    font-weight : var(--font-medium);
+    color       : var(--black-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: var(--font-semibold);
+}
+
+.nav-link:before {
+    content         : "";
+    position        : absolute;
+    width           : 100%;
+    height          : 2px;
+    bottom          : -6px;
+    left            : 0;
+    background-color: var(--primary-color);
+    visibility      : hidden;
+    width           : 0px;
+    transition      : all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover:before,
+.navbar li:hover>.nav-link:before,
+.nav-link.active:before {
+    visibility: visible;
+    width     : 100%;
+}
+
+.drop-shadow {
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+
+/* Button */
+.btn {
+    padding      : 10px 22px;
+    border-radius: 4px;
+    font-size    : var(--small-font-size);
+    font-weight  : var(--font-medium);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border          : none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    filter          : drop-shadow(0px 10px 30px rgba(168, 37, 48, 0.15));
+    background-color: var(--primary-color) !important;
+}
+
+/* Hero */
+.hero .carousel-item{
+    width: 100%;
+    height: 42rem;
+    background-color: #000;
+}
+.hero .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
