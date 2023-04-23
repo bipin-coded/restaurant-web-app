@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Foodly - Landing Page</title>
+    <title>Ming’s Diner</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vender/bootstrap/css/bootstrap.min.css">
@@ -28,11 +28,10 @@
 
     <!-- Header -->
     <header id="header" class="header align-items-center">
-        <section class="container">
+        <div class="container">
             <nav class="navbar navbar-expand-lg sticky-top bg-white">
                 <a class="navbar-brand" href="#">
-                    <!-- <img src="https://foodlylandingpage-demo.netlify.app/assets/img/logo.svg" class="me-3" alt="brand"> -->
-                    Rio's<span class="text-dark">piri priri</span>
+                    Ming’s<span class="text-dark"> Diner</span>
                 </a>
                 <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -57,11 +56,12 @@
                     <a href="#contact-us" class="btn btn-primary shadow-none">Contact</a>
                 </div>
             </nav>
-        </section>
+        </div>
     </header>
+    <!-- End of Header -->
 
     <!-- Carousel -->
-    <section id="hero" class="hero">
+    <div id="hero" class="hero">
         <div id="hero-carousel" class="carousel slide carousel-fade">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
@@ -91,11 +91,92 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </section>
+    </div>
     <!-- End of Carousel -->
+
+    <!-- Contac Us -->
+    <section id="contact-us" class="contact bg-dark-subtle">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Get in <span>Touch</span></h2>
+                <p>Need Help? <span>Contact Us</span></p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center">
+                        <i class='icon bx bx-map-alt'></i>
+                        <div>
+                            <h3>Our Address</h3>
+                            <p>A108 Adam Street, New York, OH 43938, United States</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center">
+                        <i class="icon bx bx-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:contact@example.com">contact@example.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-item  d-flex align-items-center">
+                        <i class="icon bx bx-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+1 7405 3520 08">+1 7405 3520 08</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-item d-flex align-items-center">
+                        <i class="icon bx bx-time"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <div><strong>Mon-Fri:</strong> 7AM - 3PM;
+                                <strong>Saturday & Sunday:</strong> Closed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form method='POST' class="contact-form p-3" data-netlify="true">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Full Name">
+                            <p class="message text-danger p-0 m-0 fw-lighter">Error Message</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                            <p class="message text-danger p-0 m-0 fw-lighter">Error Message</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                            <p class="message text-danger p-0 m-0 fw-lighter">Error Message</p>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
+                            <p class="message text-danger p-0 m-0 fw-lighter">Error Message</p>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.6141819398836!2d-80.61924592333226!3d40.306524771457475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834323e7c20e409%3A0x537c37f04700e748!2sMingo%20Diner%20LLC!5e0!3m2!1sen!2suk!4v1681828262380!5m2!1sen!2suk"
+                        width="600" height="450" style="border:0; height: 100%;width: 100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact Us -->
 
     <!-- Bootstrap JavaScript -->
     <script src="assets/vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <script>
         const carousel = new bootstrap.Carousel('#hero-carousel')
     </script>

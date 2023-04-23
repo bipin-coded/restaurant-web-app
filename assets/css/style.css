@@ -45,6 +45,41 @@ a:hover {
     background-color: var(--primary-light-color) !important;
 }
 
+/* section */
+section {
+    overflow: hidden;
+    padding : 80px 0;
+}
+
+.section-header {
+    text-align    : center;
+    padding-bottom: 30px;
+}
+
+.section-header h2 {
+    letter-spacing: 1px;
+    font-weight   : 600;
+    margin        : 0;
+    padding       : 0;
+    color         : var(--primary-color);
+    font-family   : var(--font-default);
+}
+
+.section-header h2 span {
+    color: var(--black-color);
+}
+
+.section-header p {
+    margin     : 0;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color      : gray;
+}
+
+.section-header p span {
+    color: var(--color-primary);
+}
+
 /* custom Scrollbar */
 ::-webkit-scrollbar {
     width: 0.365rem;
@@ -55,14 +90,8 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background   : var(--primary-color);
+    background      : var(--primary-color);
     /* border-radius: 0.5rem; */
-}
-
-/* Badge */
-.badge {
-    padding      : 0.7rem;
-    border-radius: 8px;
 }
 
 /* Navbar */
@@ -83,10 +112,15 @@ a:hover {
     font-family: var(--font-secondary);
 }
 
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: var(--primary-color);
+}
+
 .navbar-brand span {
     font-size  : var(--normal-font-size);
     font-weight: var(--font-medium);
-    color: var(--black-color) !important;
+    color      : var(--black-color) !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -106,7 +140,7 @@ a:hover {
 }
 
 .nav-link.active {
-    color: var(--primary-color);
+    color      : var(--primary-color);
     font-weight: var(--font-semibold);
 }
 
@@ -155,15 +189,118 @@ a:hover {
 }
 
 /* Hero */
-.hero .carousel-item{
-    width: 100%;
-    height: 42rem;
+.hero .carousel-item {
+    width           : 100%;
+    height          : 42rem;
     background-color: #000;
 }
-.hero .carousel-item img{
-    width: 100%;
-    height: 100%;
+
+.hero .carousel-item img {
+    width     : 100%;
+    height    : 100%;
     object-fit: cover;
-    opacity: 0.6;
+    opacity   : 0.6;
 }
 
+/* Contact Us */
+.contact .info-item {
+    background: #f4f4f4;
+    padding   : 30px;
+}
+
+.contact .info-item .icon {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 56px;
+    height         : 56px;
+    font-size      : 24px;
+    line-height    : 0;
+    color          : #fff;
+    background     : var(--primary-color);
+    border-radius  : 5%;
+    margin-right   : 15px;
+}
+
+.contact .info-item h3 {
+    font-size  : 20px;
+    color      : #6c757d;
+    font-weight: 700;
+    margin     : 0 0 5px 0;
+}
+
+.contact .info-item p {
+    padding    : 0;
+    margin     : 0;
+    line-height: 24px;
+    font-size  : 14px;
+}
+
+.contact .info-item .social-links a {
+    font-size  : 24px;
+    display    : inline-block;
+    color      : rgba(55, 55, 63, 0.7);
+    line-height: 1;
+    margin     : 4px 6px 0 0;
+    transition : 0.3s;
+}
+
+.contact .info-item .social-links a:hover {
+    color: var(--color-primary);
+}
+
+.contact .contact-form {
+    width     : 100%;
+    height    : 100%;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact .contact-form .form-group {
+    padding-bottom: 20px;
+}
+
+.contact .contact-form .error-message {
+    display    : none;
+    color      : #fff;
+    background : #df1529;
+    text-align : left;
+    padding    : 15px;
+    font-weight: 600;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+    border-radius: 0;
+    box-shadow   : none;
+    font-size    : 14px;
+    border       : 1px solid var(--primary-color);
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.contact .contact-form input {
+    height: 48px;
+}
+
+.contact .contact-form textarea {
+    padding: 10px 12px;
+    resize : none;
+}
+
+.error.message {
+    visibility: visible;
+    opacity   : 1;
+}
+
+.message {
+    font-weight: 700;
+    color      : #f55e5e;
+    margin     : 0 auto 1rem 0;
+    visibility : hidden;
+    opacity    : 0;
+    transition : opacity .3s;
+}
