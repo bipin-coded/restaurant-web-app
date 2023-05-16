@@ -1,18 +1,6 @@
 // Initial hero carousel
 const carousel = new bootstrap.Carousel('#hero-carousel')
 
-// Page Loader
-const spinnerEl = document.querySelector('.spinner-wrapper');
-
-window.addEventListener('load', () => {
-    spinnerEl.style.opacity = 0;
-
-    setTimeout(() => {
-        spinnerEl.style.display = 'none';
-    }, 200);
-})
-
-
 // Contact form
 const form = document.querySelector('.contact-form');
 const username = document.getElementById('name');
@@ -89,4 +77,35 @@ if (scrollTop) {
 // Initiate glightbox
 const glightbox = GLightbox({
     selector: '.glightbox'
+});
+
+// Testimonial slider
+new Swiper('.testimonials .slides', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
+// Page Loader
+const spinnerEl = document.querySelector('.spinner-wrapper');
+
+window.addEventListener('load', () => {
+    spinnerEl.style.opacity = 0;
+
+    setTimeout(() => {
+        spinnerEl.style.display = 'none'; 
+    }, 200);
 });

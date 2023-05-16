@@ -10,11 +10,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vender/bootstrap/css/bootstrap.min.css">
 
-    <!-- gLightBox -->
+    <!-- gLightBox Image Popup slider -->
     <link rel="stylesheet" href="assets/vender/glightbox/css/glightbox.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="assets/vender/swiper/css/swiper-bundle.min.css">
 
     <!-- Styles CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
     <link href="assets/css/responsive-style.css" rel="stylesheet">
 
     <!-- AOS CSS -->
@@ -25,7 +30,6 @@
 
     <!-- Icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
 </head>
 
 <body>
@@ -61,7 +65,7 @@
                             <a class="nav-link" href="index.html#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#newslatter">Newslatter</a>
+                            <a class="nav-link" href="index.html#newsletter">Newslatter</a>
                         </li>
                     </ul>
                     <a href="#contact-us" class="btn btn-primary shadow-none">Contact</a>
@@ -104,6 +108,37 @@
         </div>
     </div>
     <!-- End of Carousel -->
+
+    <!-- About -->
+    <section id="about" class="about section-bg bg-img">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span>Us</span></h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 text-right">
+                    <div class="about-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit officiis unde
+                            aliquid, voluptate assumenda earum architecto harum deleniti sunt nam voluptates blanditiis
+                            recusandae beatae nihil dolore expedita odit cumque?</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit officiis unde
+                            aliquid, voluptate assumenda earum architecto harum deleniti sunt nam voluptates blanditiis
+                            recusandae beatae nihil dolore expedita odit cumque?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit officiis unde
+                            aliquid, voluptate assumenda earum architecto harum deleniti sunt nam voluptates blanditiis
+                            recusandae beatae nihil dolore expedita odit cumque?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End of About -->
 
     <!-- Menu -->
     <section id="menu" class="menu">
@@ -456,8 +491,144 @@
     </section>
     <!-- End of Menu -->
 
+    <!-- Testimonial -->
+    <section id="testimonials" class="testimonials section-bg">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p>What Are They <span>Saying About Us</span></p>
+            </div>
+
+            <div class="slides swiper aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                            Maecen aliquam, risus at semper.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>Saul Goodman</h3>
+                                        <h4>Ceo &amp; Founder</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img src="assets/img/testimonials/testimonials-1.jpg"
+                                        class="img-fluid testimonial-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem
+                                            cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua
+                                            noster fugiat irure amet legam anim culpa.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>Sara Wilsson</h3>
+                                        <h4>Designer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img src="assets/img/testimonials/testimonials-2.jpg"
+                                        class="img-fluid testimonial-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
+                                            quem veniam duis minim tempor labore quem eram duis noster aute amet eram
+                                            fore quis sint minim.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>Jena Karlis</h3>
+                                        <h4>Store Owner</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img src="assets/img/testimonials/testimonials-3.jpg"
+                                        class="img-fluid testimonial-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="row gy-4 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            <i class="bi bi-quote quote-icon-left"></i>
+                                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
+                                            noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat
+                                            legam esse veniam culpa fore nisi cillum quid.
+                                            <i class="bi bi-quote quote-icon-right"></i>
+                                        </p>
+                                        <h3>John Larson</h3>
+                                        <h4>Entrepreneur</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <img src="assets/img/testimonials/testimonials-4.jpg"
+                                        class="img-fluid testimonial-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of Testimonial -->
+
     <!-- Contac Us -->
-    <section id="contact-us" class="contact bg-dark-subtle">
+    <section id="contact-us" class="contact">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="section-header">
                 <h2>Get in <span>Touch</span></h2>
@@ -538,6 +709,32 @@
         </div>
     </section>
     <!-- End of Contact Us -->
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter section-bg">
+        <div class="section-header">
+            <h2>Newslatter</h2>
+            <p>Subscribe to our Newsletter</p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <form method="post" class="d-flex">
+                        <input class="form-control" type="email" name="email" placeholder="Your Email">
+                        <button class="btn btn-sm btn-primary" type="button">Subscribe </button>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End of Newsletter -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
@@ -653,7 +850,14 @@
 
     <!-- Bootstrap JavaScript -->
     <script src="assets/vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- gLightBox Image Popup slider -->
     <script src="assets/vender/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Swiper Slider -->
+    <script src="assets/vender/swiper/js/swiper-bundle.min.js"></script>
+
+    <!-- Custome Script -->
     <script src="assets/js/script.js"></script>
 </body>
 
