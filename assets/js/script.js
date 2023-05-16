@@ -1,12 +1,15 @@
+// Initial hero carousel
+const carousel = new bootstrap.Carousel('#hero-carousel')
+
 // Page Loader
 const spinnerEl = document.querySelector('.spinner-wrapper');
 
-window.addEventListener('load', () =>{
+window.addEventListener('load', () => {
     spinnerEl.style.opacity = 0;
 
-    setTimeout(() =>{
+    setTimeout(() => {
         spinnerEl.style.display = 'none';
-    },200);
+    }, 200);
 })
 
 
@@ -67,3 +70,23 @@ form.addEventListener('submit', e => {
     notValid && e.preventDefault();
 });
 // End of Contact from
+
+//  Scroll top button
+const scrollTop = document.querySelector('.scroll-top');
+if (scrollTop) {
+    const togglescrollTop = function () {
+        window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+    }
+    window.addEventListener('load', togglescrollTop);
+    document.addEventListener('scroll', togglescrollTop);
+    scrollTop.addEventListener('click', window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    }));
+}
+// End of scroll top button
+
+// Initiate glightbox
+const glightbox = GLightbox({
+    selector: '.glightbox'
+});
