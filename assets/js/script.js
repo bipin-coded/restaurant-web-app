@@ -1,3 +1,15 @@
+// Page Loader
+const spinnerEl = document.querySelector('.spinner-wrapper');
+
+window.addEventListener('load', () =>{
+    spinnerEl.style.opacity = 0;
+
+    setTimeout(() =>{
+        spinnerEl.style.display = 'none';
+    },200);
+})
+
+
 // Contact form
 const form = document.querySelector('.contact-form');
 const username = document.getElementById('name');
