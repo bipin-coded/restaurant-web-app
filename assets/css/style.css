@@ -45,6 +45,14 @@ a:hover {
     background-color: var(--primary-light-color) !important;
 }
 
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: #fff;
+}
+
 /* page loader */
 .spinner-wrapper {
     background-color: #000;

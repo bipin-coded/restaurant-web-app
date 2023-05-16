@@ -1,6 +1,13 @@
 // Initial hero carousel
 const carousel = new bootstrap.Carousel('#hero-carousel')
 
+const selectHeader = document.querySelector('#header');
+if (selectHeader) {
+  document.addEventListener('scroll', () => {
+    window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
+  });
+}
+
 // Contact form
 const form = document.querySelector('.contact-form');
 const username = document.getElementById('name');
